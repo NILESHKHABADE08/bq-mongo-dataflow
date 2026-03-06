@@ -1,26 +1,26 @@
 {
-  "name": "BigQuery to MongoDB Dataflow",
-  "description": "Custom Dataflow Flex Template to read data from BigQuery and write to MongoDB",
+  "name": "BigQuery to MongoDB Loader",
+  "description": "Reads data from BigQuery and loads into MongoDB staging collection",
   "parameters": [
     {
-      "name": "inputTable",
-      "label": "BigQuery Input Table",
-      "helpText": "BigQuery table in format project:dataset.table"
+      "name": "input_table",
+      "label": "BigQuery Table",
+      "helpText": "Format: project:dataset.table"
     },
     {
       "name": "mongo_uri",
-      "label": "MongoDB URI",
-      "helpText": "MongoDB Atlas connection string"
+      "label": "Mongo URI",
+      "helpText": "MongoDB connection string"
     },
     {
-      "name": "database",
+      "name": "mongo_db",
       "label": "MongoDB Database",
       "helpText": "MongoDB database name"
     },
     {
-      "name": "collection",
+      "name": "mongo_collection",
       "label": "MongoDB Collection",
-      "helpText": "MongoDB collection name where data will be written"
+      "helpText": "MongoDB collection name"
     }
   ]
 }
