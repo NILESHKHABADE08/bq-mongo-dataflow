@@ -1,0 +1,23 @@
+{
+  "name": "BigQuery to MongoDB Loader",
+  "description": "Reads data from BigQuery and loads into MongoDB staging collection",
+  "parameters": [
+    {
+      "name": "input_table",
+      "label": "BigQuery Table",
+      "helpText": "Format: project:dataset.table"
+    },
+    {
+      "name": "mongo_uri",
+      "label": "Mongo URI"
+    },
+    {
+      "name": "mongo_db",
+      "label": "MongoDB Database"
+    },
+    {
+      "name": "mongo_collection",
+      "label": "MongoDB Collection"
+    }
+  ]
+}
